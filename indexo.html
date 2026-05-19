@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORYN</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#050505;
+      color:#ffffff;
+      font-family:Inter,Arial,sans-serif;
+      height:100vh;
+      overflow:hidden;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+    }
+
+    .grid{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:40px 40px;
+      opacity:0.4;
+    }
+
+    .glow{
+      position:absolute;
+      width:500px;
+      height:500px;
+      background:#1d4ed8;
+      filter:blur(180px);
+      opacity:0.12;
+      border-radius:50%;
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      padding:20px;
+    }
+
+    .tag{
+      color:#7c7c7c;
+      font-size:12px;
+      letter-spacing:3px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    h1{
+      font-size:92px;
+      letter-spacing:8px;
+      font-weight:700;
+    }
+
+    .line{
+      width:120px;
+      height:1px;
+      background:#2d2d2d;
+      margin:25px auto;
+    }
+
+    .desc{
+      color:#9ca3af;
+      font-size:18px;
+      max-width:700px;
+      line-height:1.7;
+    }
+
+    .coming{
+      margin-top:40px;
+      font-size:14px;
+      color:#4ade80;
+      letter-spacing:4px;
+      text-transform:uppercase;
+    }
+
+    .footer{
+      position:absolute;
+      bottom:30px;
+      font-size:12px;
+      color:#555;
+      letter-spacing:2px;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:54px;
+      }
+
+      .desc{
+        font-size:15px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="grid"></div>
+  <div class="glow"></div>
+
+  <div class="container">
+
+    <div class="tag">
+      Steward Vector Security Infrastructure
+    </div>
+
+    <h1>ORYN</h1>
+
+    <div class="line"></div>
+
+    <div class="desc">
+      Continuous attack surface intelligence and website vulnerability monitoring platform engineered for modern infrastructure.
+    </div>
+
+    <div class="coming">
+      Coming Soon
+    </div>
+
+  </div>
+
+  <div class="footer">
+    oryn.stewardvector.info
+  </div>
+
+</body>
+</html>
